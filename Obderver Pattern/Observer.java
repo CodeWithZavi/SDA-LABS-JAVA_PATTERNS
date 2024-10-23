@@ -6,4 +6,4 @@ public abstract class Observer {
        this.isActive=cond;
    } 
    
-}
+}s

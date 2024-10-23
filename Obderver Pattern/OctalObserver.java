@@ -6,7 +6,7 @@ public class OctalObserver extends Observer{
       this.isActive=true;
    }
 
-   @Override
+   @Overrides
    public void update() {
      System.out.println( "Octal String: " + Integer.toOctalString( subject.getState() ) ); 
    }
