@@ -1,13 +1,13 @@
-public class BinaryObserver extends Observer{
+public class BinaryObserver extends Observer {
 
-   public BinaryObserver(Subject subject){
+   public BinaryObserver(Subject subject) {
       this.subject = subject;
       this.subject.attach(this);
-       this.isActive=true;
+      this.isActive = true;
    }
 
    @Override
    public void update() {
-      System.out.println( "Binary String: " + Integer.toBinaryString( subject.getState() ) ); 
+      System.out.println("Binary String: " + Integer.toBinaryString(subject.getState()));
    }
-}s
+}

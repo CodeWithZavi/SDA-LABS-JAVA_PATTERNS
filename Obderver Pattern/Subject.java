@@ -7,7 +7,7 @@ public class Subject {
 
    public int getState() {
       return state;
-   }s
+   }
 
    public void setState(int state) {
       this.state = state;
