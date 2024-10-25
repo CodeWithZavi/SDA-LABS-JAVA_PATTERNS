@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-ss
+
 class EventManager {
     Map<String, List<EventListener>> listeners = new HashMap<>();
 
@@ -66,7 +66,8 @@ class EmailNotificationListener implements EventListener {
 
     @Override
     public void update(String eventType, File file) {
-        System.out.println("Email to " + email + ": Someone has performed " + eventType + " operation with the following file: " + file.getName());
+        System.out.println("Email to " + email + ": Someone has performed " + eventType
+                + " operation with the following file: " + file.getName());
     }
 }
 
@@ -79,7 +80,8 @@ class LogOpenListener implements EventListener {
 
     @Override
     public void update(String eventType, File file) {
-        System.out.println("Save to log " + log + ": Someone has performed " + eventType + " operation with the following file: " + file.getName());
+        System.out.println("Save to log " + log + ": Someone has performed " + eventType
+                + " operation with the following file: " + file.getName());
     }
 }
 
